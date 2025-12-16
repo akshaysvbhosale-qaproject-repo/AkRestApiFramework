@@ -35,8 +35,8 @@ public class RegisterApiTest {
 		RegisterResponse registerResponse = response.as(RegisterResponse.class);
 
 		Assert.assertEquals(registerResponse.getMessage(), "Registered Successfully");
+    
 		Assert.assertEquals(response.getStatusCode(), 200);
-		
 	}
 
 }
