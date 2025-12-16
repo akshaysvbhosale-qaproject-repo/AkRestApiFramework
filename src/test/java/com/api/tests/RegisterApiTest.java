@@ -17,8 +17,8 @@ public class RegisterApiTest {
 
 		RegisterRequest registerRequest = new RegisterRequest.Builder()
 				.firstName("Akshay")
-				.lastName("PracFive")
-				.userEmail("akspractice.qaefive@gmail.com")
+				.lastName("PracSix")
+				.userEmail("akspractice.qaesix@gmail.com")
 				.userRole("customer")
 				.occupation("Engineer")
 				.gender("Male")
@@ -35,6 +35,8 @@ public class RegisterApiTest {
 		RegisterResponse registerResponse = response.as(RegisterResponse.class);
 
 		Assert.assertEquals(registerResponse.getMessage(), "Registered Successfully");
+		Assert.assertEquals(response.getStatusCode(), 200);
+		
 	}
 
 }

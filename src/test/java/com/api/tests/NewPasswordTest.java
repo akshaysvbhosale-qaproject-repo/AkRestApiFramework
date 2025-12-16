@@ -28,6 +28,7 @@ public class NewPasswordTest {
 		NewPasswordResponse newPasswordResponse = response.as(NewPasswordResponse.class);
 		
 		Assert.assertEquals(newPasswordResponse.getMessage(), "Password Changed Successfully");
+		Assert.assertEquals(response.getStatusCode(), 200);
 	}
 
 }
