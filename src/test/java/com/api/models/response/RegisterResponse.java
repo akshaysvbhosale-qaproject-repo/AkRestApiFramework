@@ -26,5 +26,4 @@ public class RegisterResponse {
 		return "RegisterResponse [message=" + message + "]";
 	}
 
-
 }

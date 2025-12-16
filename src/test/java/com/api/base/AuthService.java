@@ -1,8 +1,8 @@
 package com.api.base;
 
 import com.api.models.request.LoginRequest;
+import com.api.models.request.NewPasswordRequest;
 import com.api.models.request.RegisterRequest;
-
 import io.restassured.response.Response;
 
 public class AuthService extends BaseService {
@@ -15,6 +15,10 @@ public class AuthService extends BaseService {
 	
 	public Response register(RegisterRequest payload) {
 		return postRequest(payload, BASE_PATH + "register");
+	}
+	
+	public Response forgotPassword(NewPasswordRequest payload) {
+		return postRequest(payload,BASE_PATH + "new-password");
 	}
 
 }

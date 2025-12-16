@@ -17,8 +17,8 @@ public class RegisterApiTest {
 
 		RegisterRequest registerRequest = new RegisterRequest.Builder()
 				.firstName("Akshay")
-				.lastName("PracFour")
-				.userEmail("akspractice.qaefour@gmail.com")
+				.lastName("PracFive")
+				.userEmail("akspractice.qaefive@gmail.com")
 				.userRole("customer")
 				.occupation("Engineer")
 				.gender("Male")
