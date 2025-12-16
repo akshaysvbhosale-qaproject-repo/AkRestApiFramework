@@ -2,11 +2,9 @@ package com.api.tests;
 
 import org.testng.Assert;
 import org.testng.annotations.Test;
-
 import com.api.base.AuthService;
 import com.api.models.request.NewPasswordRequest;
 import com.api.models.response.NewPasswordResponse;
-
 import io.restassured.response.Response;
 
 public class NewPasswordTest {
@@ -28,6 +26,7 @@ public class NewPasswordTest {
 		NewPasswordResponse newPasswordResponse = response.as(NewPasswordResponse.class);
 		
 		Assert.assertEquals(newPasswordResponse.getMessage(), "Password Changed Successfully");
+		Assert.assertEquals(response.statusCode(), 200);
 	}
 
 }
